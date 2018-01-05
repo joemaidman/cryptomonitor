@@ -1,0 +1,41 @@
+{
+  "name": "metrical",
+  "version": "0.1.0",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "cryptocoins-icons": "^2.7.0",
+    "enum": "^2.5.0",
+    "material-design-icons": "^3.0.1",
+    "material-icons": "^0.1.0",
+    "material-ui": "^1.0.0-beta.23",
+    "numeral": "^2.0.6",
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-cryptocoins": "^1.0.11",
+    "react-dnd": "^2.5.4",
+    "react-dnd-html5-backend": "^2.5.4",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.17",
+    "react-with-styles": "^2.3.0",
+    "recharts": "^1.0.0-beta.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "typeface-roboto": "0.0.45"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jsdom": "11.5.1",
+    "jsdom-global": "3.0.2",
+    "react-test-renderer": "^16.2.0",
+    "redux-test-utils": "^0.2.2"
+  }
+}
