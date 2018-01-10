@@ -1,6 +1,6 @@
 # Cryptomonitor [![Build Status](https://travis-ci.org/joemaidman/cryptomonitor.svg?branch=master)](https://travis-ci.org/joemaidman/cryptomonitor)
 
-Cryptomonitor is a  responsive, prototype dashboard to display basic cyrptocurrency pricing data for the largest coins by market cap. The project is implemented using React for the view layer and Redux to manage state. Material-UI has been used to follow the principles of good design. Live and historic pricing is provided by the Cryptocompare API.
+Cryptomonitor is a  responsive, prototype dashboard to display basic cyrptocurrency pricing data for the largest coins by market cap. The project is implemented using javascript with React for the view layer and Redux to manage state. Material-UI has been used to follow the principles of good design. Live and historic pricing is provided by the <a href='https://www.cryptocompare.com/api/' target='_blank'>Cryptocompare API</a>.
 
 A demo is availale <a href='https://cryptomonitor.netlify.com' target='_blank'>here</a>.
 
@@ -14,34 +14,40 @@ A demo is availale <a href='https://cryptomonitor.netlify.com' target='_blank'>h
 
 ## Screenshots
 **Desktop**
-
-![home](https://github.com/joemaidman/cryptomonitor/blob/master/screenshots/desktop.png)
+![home](https://raw.githubusercontent.com/joemaidman/cryptomonitor/master/screenshots/desktop.png)
 
 **Mobile**
-
-![Mobile](https://github.com/joemaidman/cryptomonitor/blob/master/screenshots/mobile.png)
+![Mobile](https://raw.githubusercontent.com/joemaidman/cryptomonitor/master/screenshots/mobile.png)
 
 **Expanded Widget**
-![Widget](https://github.com/joemaidman/cryptomonitor/blob/master/screenshots/widget.png)
+![Widget](https://raw.githubusercontent.com/joemaidman/cryptomonitor/master/screenshots/widget.png)
 
 ## Technologies
 
 **Boilerplate**
-- create-react-app
+- <a href='https://www.npmjs.com/package/create-react-app'>create-react-app</a>
 
 **Frontend**
-- React
-- Redux
+- <a href='https://reactjs.org/' target='_blank'>React</a>
+- <a href='https://www.npmjs.com/package/redux' target='_blank'>Redux</a>
 
 **Backend**
 - TBC
 
 **Testing**
-- Jest
-- Enzyme
+- <a href='https://www.npmjs.com/package/jest' target='_blank'>Jest</a>
+- <a href='https://www.npmjs.com/package/enzyme' target='_blank'>Enzyme</a>
 
 **Deployment**
-- Heroku
+- <a href='https://www.heroku.com/' target='_blank'>Heroku</a>
+
+**Important npm dependencies**
+- <a href='https://www.npmjs.com/package/recharts' target='_blank'>recharts</a>
+- <a href='https://www.npmjs.com/package/material-ui' target='_blank'>material-ui</a>
+- <a href='https://www.npmjs.com/package/ramda' target='_blank'>ramda</a>
+- <a href='https://www.npmjs.com/package/numeral' target='_blank'>numeral</a>
+- <a href='https://www.npmjs.com/package/axios' target='_blank'>axios</a>
+- <a href='https://www.npmjs.com/package/cryptocoins-icons' target='_blank'>cryptocoins-icons</a>
 
 ## Usage
 - Clone the repo
