@@ -9,17 +9,21 @@ A demo is availale <a href='https://cryptomonitor.netlify.com' target='_blank'>h
 * Toggle base currency (USD/GBP/EUR)
 * Indicates direction of last price tick
 * Calculates percentage return over 1D
+* Expandable tiles to show additional information
 * Chart price and volume of each coin over 1W, 1M, 1Y
 * Short coin description and link
 
 ## Screenshots
 **Desktop**
+
 ![home](https://raw.githubusercontent.com/joemaidman/cryptomonitor/master/screenshots/desktop.png)
 
 **Mobile**
+
 ![Mobile](https://raw.githubusercontent.com/joemaidman/cryptomonitor/master/screenshots/mobile.png)
 
 **Expanded Widget**
+
 ![Widget](https://raw.githubusercontent.com/joemaidman/cryptomonitor/master/screenshots/widget.png)
 
 ## Technologies

@@ -20,16 +20,12 @@ describe('Buttons', () => {
         return mount(<Buttons {...resolvedProps} />);
     }
 
-    describe('IT renders two buttons', () => {
+    beforeAll(() => {
+        component = createComponentWithProps();
+    });
 
-        beforeAll(() => {
-            component = createComponentWithProps();
-        });
-
-        it('THEN it renders increment and decrement buttons', () => {
-            expect(component.find('IconButton').length).toEqual(2);
-        });
-
+    it('should renders increment and decrement buttons', () => {
+        expect(component.find('IconButton').length).toEqual(2);
     });
 
 });

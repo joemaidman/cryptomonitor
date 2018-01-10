@@ -8,6 +8,7 @@ const initialState = {
     configuration: {
         baseCurrency: 'USD'
     }
+
 };
 
 export default initialState;

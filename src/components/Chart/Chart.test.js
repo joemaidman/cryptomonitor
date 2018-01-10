@@ -15,7 +15,8 @@ describe('Chart', () => {
         data: [
             { name: "January", value: 2 },
             { name: "February", value: 1 }
-        ]
+        ],
+        days: 7
     };
 
     const createComponentWithProps = (overridenProps) => {
@@ -59,6 +60,20 @@ describe('Chart', () => {
 
         it('THEN it renders an pie chart', () => {
             expect(component.find('PieChart').length).toEqual(1);
+        });
+
+    });
+
+    describe('GIVEN it receives a composite chartType', () => {
+
+        beforeAll(() => {
+            component = createComponentWithProps({
+                chartType: ChartType.COMPOSITE
+            });
+        });
+
+        it('THEN it renders an composite chart', () => {
+            expect(component.find('ComposedChart').length).toEqual(1);
         });
 
     });
