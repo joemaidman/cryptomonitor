@@ -9,7 +9,7 @@ body{
   padding-right: 200px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .App {
     padding-left: 20px;
     padding-right: 20px;
