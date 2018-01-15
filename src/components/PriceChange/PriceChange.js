@@ -6,7 +6,7 @@ const PriceChange = (props) => {
 
     return (
         <div>
-            <h3 className={classNames(directionSinceYesterday.value)}>
+            <h3 className={classNames(directionSinceYesterday)}>
                 {percentageChange}
             </h3>
         </div>

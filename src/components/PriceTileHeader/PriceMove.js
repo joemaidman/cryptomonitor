@@ -1,9 +1,7 @@
-import Enum from 'enum';
-
-const PriceMove = new Enum({
-    'UP': 'green',
-    'DOWN': 'red',
-    'UNCHANGED': 'black'
+const PriceMove = Object.freeze({
+    UP: 'green',
+    DOWN: 'red',
+    UNCHANGED: 'black'
 });
 
 export default PriceMove;

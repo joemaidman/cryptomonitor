@@ -15,9 +15,9 @@ const FrequencySelector = (props) => {
             <Radio
                 className='chart-radio-btn'
                 // eslint-disable-next-line
-                checked={activeFrequency == TabType.WEEK.value}
+                checked={activeFrequency == TabType.WEEK}
                 onChange={(e) => { changeFrequency(e) }}
-                value={TabType.WEEK.value.toString()}
+                value={TabType.WEEK.toString()}
                 name='W'
                 aria-label='W'
             />
@@ -29,7 +29,7 @@ const FrequencySelector = (props) => {
                 // eslint-disable-next-line
                 checked={activeFrequency == TabType.MONTH}
                 onChange={(e) => { changeFrequency(e) }}
-                value={TabType.MONTH.value.toString()}
+                value={TabType.MONTH.toString()}
                 name='M'
                 aria-label='M'
             />
@@ -41,7 +41,7 @@ const FrequencySelector = (props) => {
                 // eslint-disable-next-line
                 checked={activeFrequency == TabType.YEAR}
                 onChange={(e) => { changeFrequency(e) }}
-                value={TabType.YEAR.value.toString()}
+                value={TabType.YEAR.toString()}
                 name='Y'
                 aria-label='Y'
             />

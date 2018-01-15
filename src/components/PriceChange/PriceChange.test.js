@@ -30,7 +30,7 @@ describe('PriceChange', () => {
     });
 
     it('should render with the correct colour based on the direction', () => {
-        expect(component.find('h3').first().hasClass(PriceMove.UP.value)).toBe(true);
+        expect(component.find('h3').first().hasClass(PriceMove.UP)).toBe(true);
     });
 
 });

@@ -15,7 +15,7 @@ class ExpansionPanel extends React.Component {
         super(props)
 
         this.state = {
-            activeFrequency: TabType.WEEK.value
+            activeFrequency: TabType.WEEK
         }
     }
 
@@ -37,7 +37,7 @@ class ExpansionPanel extends React.Component {
                     />
                     {/* This pattern is clearly wrong but works around an outstanding bug in rechart */}
                     {/* When declaratively passing days to a single chart, the data is redrawn via a warped animation */}
-                     {/* eslint-disable */}
+                    {/* eslint-disable */}
                     {this.state.activeFrequency == 7 && (
                         <Chart
                             chartType={ChartType.COMPOSITE}
@@ -57,7 +57,7 @@ class ExpansionPanel extends React.Component {
                         days={this.state.activeFrequency}
                     />)
                     }
-                     {/* eslint-enable */}
+                    {/* eslint-enable */}
                     <FrequencySelector
                         activeFrequency={this.state.activeFrequency}
                         changeFrequency={this.handleChangeFrequency}
@@ -68,7 +68,7 @@ class ExpansionPanel extends React.Component {
     }
 
     handleChangeFrequency = (event) => {
-        this.setState({ activeFrequency: event.target.value });
+        this.setState({ activeFrequency: event.target });
     };
 
 }

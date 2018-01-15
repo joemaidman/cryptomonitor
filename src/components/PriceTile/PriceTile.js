@@ -16,8 +16,8 @@ class PriceTile extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            directionSinceLast: PriceMove.UNCHANGED.value,
-            directionSinceYesterday: PriceMove.UNCHANGED.value,
+            directionSinceLast: PriceMove.UNCHANGED,
+            directionSinceYesterday: PriceMove.UNCHANGED,
             isExpanded: false
         }
     }
@@ -27,7 +27,7 @@ class PriceTile extends React.Component {
         this.setDirectionSinceYesterday(price, previousPrice);
         if (baseCurrency !== this.props.baseCurrency) {
             this.setState({
-                directionSinceLast: PriceMove.UNCHANGED.value
+                directionSinceLast: PriceMove.UNCHANGED
             })
             updateHistoricPrices(priceCode, baseCurrency);
         }

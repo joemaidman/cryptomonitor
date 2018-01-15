@@ -1,6 +1,4 @@
-import Enum from 'enum';
-
-const TabType = new Enum({
+const TabType = Object.freeze({
     WEEK: 7,
     MONTH: 30,
     YEAR: 365
