@@ -1,5 +1,5 @@
 {
-  "name": "metrical",
+  "name": "cryptomonitor",
   "version": "0.1.0",
   "dependencies": {
     "axios": "^0.17.1",
