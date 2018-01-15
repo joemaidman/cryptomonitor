@@ -13,17 +13,17 @@ class Buttons extends React.Component {
         return (
             <div>
                 <IconButton
-                    aria-label="Remove"
+                    aria-label='Remove'
                     onClick={decrement}>
                     <Icon>
-                        {"remove"}
+                        {'remove'}
                     </Icon>
                 </IconButton>
                 <IconButton
-                    aria-label="Add"
+                    aria-label='Add'
                     onClick={increment} >
                     <Icon>
-                        {"add"}
+                        {'add'}
                     </Icon>
                 </IconButton>
             </div>

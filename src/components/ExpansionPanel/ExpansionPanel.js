@@ -26,7 +26,7 @@ class ExpansionPanel extends React.Component {
         return (
             <Collapse
                 in={isExpanded}
-                timeout="auto"
+                timeout='auto'
                 unmountOnExit
             >
                 <CardContent>
@@ -37,6 +37,7 @@ class ExpansionPanel extends React.Component {
                     />
                     {/* This pattern is clearly wrong but works around an outstanding bug in rechart */}
                     {/* When declaratively passing days to a single chart, the data is redrawn via a warped animation */}
+                     {/* eslint-disable */}
                     {this.state.activeFrequency == 7 && (
                         <Chart
                             chartType={ChartType.COMPOSITE}
@@ -50,13 +51,13 @@ class ExpansionPanel extends React.Component {
                         days={this.state.activeFrequency}
                     />)
                     }
-
                     {this.state.activeFrequency == 365 && (<Chart
                         chartType={ChartType.COMPOSITE}
                         data={data}
                         days={this.state.activeFrequency}
                     />)
                     }
+                     {/* eslint-enable */}
                     <FrequencySelector
                         activeFrequency={this.state.activeFrequency}
                         changeFrequency={this.handleChangeFrequency}

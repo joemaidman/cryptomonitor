@@ -4,34 +4,33 @@ import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
 
 import initialState from '../../initialState';
-import Price from './Price'
+import PriceChange from './PriceChange'
 import PriceMove from '../PriceTileHeader/PriceMove';
 
-describe('Price', () => {
+describe('PriceChange', () => {
 
     let component;
 
     const defaultProps = {
-        price: 100,
-        baseCurrency: 'GBP',
-        directionSinceLast: PriceMove.UP
+        percentageChange: 5,
+        directionSinceYesterday: PriceMove.UP,
     };
 
     const createComponentWithProps = (overridenProps) => {
         const resolvedProps = Object.assign({}, defaultProps, overridenProps);
-        return mount(<Price {...resolvedProps} />);
+        return mount(<PriceChange {...resolvedProps} />);
     }
 
     beforeAll(() => {
         component = createComponentWithProps();
     });
 
-    it('should render with the correct currency, decimal precision and direction indicator', () => {
-        expect(component.find('h2').first().text()).toEqual('£100.00arrow_drop_up');
+    it('should render the percentage change', () => {
+        expect(component.find('h3').first().text()).toEqual('5');
     });
 
-    it('should render with the correct colour', () => {
-        expect(component.find('h2').first().hasClass('green')).toBe(true);
+    it('should render with the correct colour based on the direction', () => {
+        expect(component.find('h3').first().hasClass(PriceMove.UP.value)).toBe(true);
     });
 
 });

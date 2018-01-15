@@ -4,6 +4,7 @@ import Icon from 'material-ui/Icon';
 
 import PriceMove from '../PriceTileHeader/PriceMove';
 import { formatCurrencyThousands, getCurrencySymbol } from '../../Utilities/NumberUtilities';
+import '../../App/App.css';
 
 const Price = (props) => {
 
@@ -17,8 +18,8 @@ const Price = (props) => {
                 getCurrencySymbol(baseCurrency)
             )}
             <Icon className={classNames('price-indicator', directionSinceLast.value)}>
-                {directionSinceLast === PriceMove.UP && "arrow_drop_up"}
-                {directionSinceLast === PriceMove.DOWN && "arrow_drop_down"}
+                {directionSinceLast === PriceMove.UP && 'arrow_drop_up'}
+                {directionSinceLast === PriceMove.DOWN && 'arrow_drop_down'}
             </Icon>
         </h2>
     )

@@ -4,7 +4,7 @@ import {
     formatPercentageReturn,
     getCurrencySymbol,
     calculatePercentageChange
-} from "./NumberUtilities";
+} from './NumberUtilities';
 
 describe('NumberUtilities', () => {
 
@@ -39,6 +39,10 @@ describe('NumberUtilities', () => {
 
         it('should return the symbol of the specified currency', () => {
             expect(getCurrencySymbol('GBP')).toBe('£');
+        });
+
+        it('should return - if no currency is specified', () => {
+            expect(getCurrencySymbol(undefined)).toBe('-');
         });
 
     });

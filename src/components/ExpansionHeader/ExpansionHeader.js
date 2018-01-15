@@ -12,17 +12,17 @@ const ExpansionHeader = (props) => {
         <CardActions className='action-row'>
             <IconButton disabled>
                 <Icon className='icon'>
-                    {"more_horiz"}
+                    {'more_horiz'}
                 </Icon>
             </IconButton>
             <div className='action-divider' />
             <IconButton
                 onClick={() => { handleExpandClick() }}
                 aria-expanded={isExpanded}
-                aria-label="Show more"
+                aria-label='Show more'
             >
                 <Icon className={isExpanded ? 'expandOpen' : 'expand'}>
-                    {"keyboard_arrow_down"}
+                    {'keyboard_arrow_down'}
                 </Icon>
             </IconButton>
         </CardActions>

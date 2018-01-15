@@ -6,11 +6,12 @@ import * as CryptoIcon from 'react-cryptocoins';
 import Price from '../Price/Price';
 import PriceChange from '../PriceChange/PriceChange';
 import { calculatePercentageChange, formatPercentageReturn } from '../../Utilities/NumberUtilities';
+import '../../App/App.css';
 
 class PriceTileHeader extends React.Component {
 
     render() {
-      
+
         const { text, icon, iconColour, price, previousPrice, baseCurrency, directionSinceLast, directionSinceYesterday } = this.props;
 
         const CoinIcon = CryptoIcon[icon];

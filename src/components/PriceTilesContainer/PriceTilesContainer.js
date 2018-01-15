@@ -3,6 +3,7 @@ import Grid from 'material-ui/Grid';
 
 import PriceTile from '../PriceTile/PriceTile';
 import Coins from '../../resources/Coins';
+import '../../App/App.css';
 
 class PriceTilesContainer extends React.Component {
     render() {
@@ -10,7 +11,6 @@ class PriceTilesContainer extends React.Component {
         const { livePrices, historicPrices, updateHistoricPrices, baseCurrency } = this.props;
         return (
             <Grid container>
-                
                 {Coins.map((coin) => {
                     return (
                         <PriceTile

@@ -6,7 +6,7 @@ import HTML5Backend from 'react-dnd-html5-backend'
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
 import PageHeader from '../components/PageHeader/PageHeader';
-import PageFooter from '../components/PriceTile/PriceTile';
+import PageFooter from '../components/PageFooter/PageFooter';
 import CurrencySelector from '../components/CurrencySelector/CurrencySelector';
 import PriceTilesContainer from '../components/PriceTilesContainer/PriceTilesContainer'
 import {
@@ -33,9 +33,10 @@ export class App extends Component {
 
     return (
       <MuiThemeProvider theme={theme}>
-        <div className="App">
+        <div className='App'>
           <PageHeader />
           <CurrencySelector
+            baseCurrency={configuration.baseCurrency}
             changeBaseCurrency={changeBaseCurrency}
           />
           <PriceTilesContainer
@@ -49,7 +50,7 @@ export class App extends Component {
       </MuiThemeProvider>
     );
   }
-  
+
 }
 
 const mapStateToProps = (state) => {

@@ -95,7 +95,7 @@ const Coins = [
         iconColour: '#A2D030',
         description: 'Chinese based cryptocurrency (formerly ANT Shares which produce ANT Coins) name change August 2017 to NEO and GAs, these enable the development of digital assets and smart contracts',
         more: 'https://en.wikipedia.org/wiki/NEO_(cryptocurrency)'
-    },
+    }
 ]
 
 export default Coins;

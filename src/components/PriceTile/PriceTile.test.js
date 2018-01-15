@@ -11,13 +11,13 @@ describe('PriceTile', () => {
     let component;
 
     const defaultProps = {
-        text: "Bitcoin",
-        icon: "Btc",
+        text: 'Bitcoin',
+        icon: 'Btc',
         iconColour: 'red',
         price: 100,
         data: [
-            { time: "January", open: 1, close: 2, volumeto: 1 },
-            { time: "February", open: 2, close: 3, volumeto: 1 }
+            { time: 'January', open: 1, close: 2, volumeto: 1 },
+            { time: 'February', open: 2, close: 3, volumeto: 1 }
         ],
         baseCurrency: 'GBP',
         description: 'Test description',
@@ -42,7 +42,7 @@ describe('PriceTile', () => {
     });
 
     it('THEN it renders the expansion panel', () => {
-        expect(component.find('ExpansionPanel').length).toEqual(0);
+        expect(component.find('ExpansionPanel').length).toEqual(1);
     });
 
 });

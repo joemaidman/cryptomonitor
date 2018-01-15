@@ -9,6 +9,7 @@ import PriceTileHeader from '../PriceTileHeader/PriceTileHeader';
 import ExpansionHeader from '../ExpansionHeader/ExpansionHeader';
 import ExpansionPanel from '../ExpansionPanel/ExpansionPanel';
 import PriceMove from '../PriceTileHeader/PriceMove';
+import '../../App/App.css';
 
 class PriceTile extends React.Component {
 
@@ -25,6 +26,9 @@ class PriceTile extends React.Component {
         this.setDirectionSinceLast(price);
         this.setDirectionSinceYesterday(price, previousPrice);
         if (baseCurrency !== this.props.baseCurrency) {
+            this.setState({
+                directionSinceLast: PriceMove.UNCHANGED.value
+            })
             updateHistoricPrices(priceCode, baseCurrency);
         }
     }
@@ -41,7 +45,7 @@ class PriceTile extends React.Component {
 
         return (
             <Grid item xs={12} sm={12} md={6} lg={3}>
-                <Card className="paper-widget card-parent">
+                <Card className='paper-widget card-parent'>
                     <CardContent>
                         <PriceTileHeader
                             text={text}
@@ -58,11 +62,12 @@ class PriceTile extends React.Component {
                         isExpanded={this.state.isExpanded}
                         handleExpandClick={this.handleExpandClick}
                     />
-                    {/* <ExpansionPanel
+                    <ExpansionPanel
                         isExpanded={this.state.isExpanded}
                         description={description}
                         moreInformationLink={moreInformationLink}
-                    /> */}
+                        data={data}
+                    />
                 </Card>
             </Grid>
         )
@@ -97,7 +102,7 @@ class PriceTile extends React.Component {
     }
 
     handleExpandClick = () => {
-        this.setState({ isExpanded: !this.state.expanded });
+        this.setState({ isExpanded: !this.state.isExpanded });
     };
 
 }

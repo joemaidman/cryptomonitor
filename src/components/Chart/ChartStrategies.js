@@ -38,7 +38,7 @@ const renderAreaChart = (data) => {
         <AreaChart data={data}>
             <Tooltip />
             <XAxis
-                dataKey="time"
+                dataKey='time'
                 hide={true}
             />
             <Area
@@ -73,7 +73,7 @@ const renderBarChart = (data) => {
         <BarChart data={data}>
             <Tooltip />
             <XAxis
-                dataKey="name"
+                dataKey='name'
                 hide={true}
             />
             <Bar
@@ -91,15 +91,15 @@ const renderCompositeChart = (data) => {
         <ComposedChart data={data} >
             <Tooltip content={<ChartTooltip />} />
             <XAxis
-                dataKey="time"
+                dataKey='time'
                 hide={true}
             />
             <YAxis
-                yAxisId="left"
+                yAxisId='left'
                 hide={true}
             />
             <YAxis
-                yAxisId="right"
+                yAxisId='right'
                 hide={true}
             />
             <Bar
@@ -107,7 +107,7 @@ const renderCompositeChart = (data) => {
                 dataKey='volumeto'
                 fill={FILL_COLOUR}
                 stroke={STROKE_COLOUR}
-                yAxisId="left"
+                yAxisId='left'
             />
             <Area
                 animationDuration={500}
@@ -115,7 +115,7 @@ const renderCompositeChart = (data) => {
                 dataKey='close'
                 stroke={STROKE_COLOUR}
                 fill={FILL_COLOUR}
-                yAxisId="right"
+                yAxisId='right'
             />
         </ComposedChart>
     )

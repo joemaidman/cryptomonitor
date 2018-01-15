@@ -31,7 +31,7 @@ describe('PriceTileHeader', () => {
     });
 
     it('THEN it renders the text name of the coin', () => {
-        expect(component.find('h2').first().text()).toEqual("Bitcoin");
+        expect(component.find('h2').first().text()).toEqual('Bitcoin');
     });
 
     it('THEN it renders the coin icon component', () => {

@@ -9,18 +9,13 @@ const CoinCodes = Coins.map((coin) => {return coin.priceCode}).join(',');
 const CurrencyCodes = Currencies.map((currency) => {return currency.code}).join(',');
 
 export const updateLivePrices = (baseCurrency) => {
+
     const request = axios.get(LIVE_PRICE_API + 'tsyms=' + CurrencyCodes + '&fsyms=' + CoinCodes);
     return (dispatch) => {
-        request.then(({ data }) => {
+        return request.then(({ data }) => {
             dispatch({
                 type: 'UPDATE_LIVE_PRICES',
                 payload: data
-            });
-        });
-        request.catch((error) => {
-            dispatch({
-                type: 'UPDATE_LIVE_ERROR',
-                payload: error
             });
         });
     };
@@ -29,19 +24,13 @@ export const updateLivePrices = (baseCurrency) => {
 export const updateHistoricPrices = (coinCode, baseCurrency) => {
     let request = axios.get((HISTORIC_PRICE_API + '&tsym=' + baseCurrency  + '&fsym=' + coinCode));
     return (dispatch) => {
-        request.then(({ data }) => {
+        return request.then(({ data }) => {
             dispatch({
                 type: 'UPDATE_HISTORIC_PRICES',
                 payload: {
                     coinCode,
                     data
                 }
-            });
-        });
-        request.catch((error) => {
-            dispatch({
-                type: 'UPDATE_HISTORIC_ERROR',
-                payload: error
             });
         });
     };

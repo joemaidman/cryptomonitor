@@ -1,4 +1,4 @@
-import { removeZeroRecords, takeLast } from "./DataUtilities";
+import { removeZeroRecords, takeLast } from './DataUtilities';
 
 describe('DataUtilities', () => {
 

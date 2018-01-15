@@ -16,7 +16,7 @@ export const formatPercentageReturn = (number, decimalPoints) => {
 }
 
 export const getCurrencySymbol = (currency) => {
-    return R.find(R.propEq('code', currency), Currencies)['symbol'];
+    return !currency ? '-' : R.find(R.propEq('code', currency), Currencies)['symbol'];
 }
 
 export const calculatePercentageChange = (finalValue, startValue) => {

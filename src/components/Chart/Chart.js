@@ -18,13 +18,13 @@ class Chart extends React.Component {
             );
 
         return (
-            <div id="container">
+            <div id='container'>
                 <h4 className='text-right'>
                     Chart
                 </h4>
                 <ResponsiveContainer
-                    width="100%"
-                    height="100%"
+                    width='100%'
+                    height='100%'
                     maxHeight={100}
                     aspect={1}>
                     {renderChart(chartType, cleanedChartData)}
@@ -34,7 +34,7 @@ class Chart extends React.Component {
     }
 
     mapTimeStamps(data) {
-        R.map((record) => {
+       return R.map((record) => {
             return {
                 ...record,
                 time: convertUNIXTimeStampToDate(record.time)

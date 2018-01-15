@@ -5,8 +5,10 @@ const PriceChange = (props) => {
     const { percentageChange, directionSinceYesterday } = props;
 
     return (
-        <div className={classNames(directionSinceYesterday.value)}>
-            <h3>{percentageChange}</h3>
+        <div>
+            <h3 className={classNames(directionSinceYesterday.value)}>
+                {percentageChange}
+            </h3>
         </div>
     )
 }

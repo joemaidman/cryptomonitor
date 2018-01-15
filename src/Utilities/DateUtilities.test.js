@@ -1,4 +1,4 @@
-import { convertUNIXTimeStampToDate } from "./DateUtilities";
+import { convertUNIXTimeStampToDate } from './DateUtilities';
 
 describe('DateUtilities', () => {
 
