@@ -68,7 +68,7 @@ class ExpansionPanel extends React.Component {
     }
 
     handleChangeFrequency = (event) => {
-        this.setState({ activeFrequency: event.target });
+        this.setState({ activeFrequency: event.target.value });
     };
 
 }
